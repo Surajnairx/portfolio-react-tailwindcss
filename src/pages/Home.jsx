@@ -1,9 +1,10 @@
 import React from "react";
+import ThemeToggle from "../components/ThemeToggle";
 
 function Home() {
   return (
-    <div>
-      <h1 className="text-red-600 bg-black min-h-screen"> hello world</h1>
+    <div className=" min-h-screen bg-background text-foreground">
+      <ThemeToggle />
     </div>
   );
 }
