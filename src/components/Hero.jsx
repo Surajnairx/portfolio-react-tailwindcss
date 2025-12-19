@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flec-col items-center justify-center px-4"
+      className="relative min-h-screen flex flec-col items-center md:px-4"
     >
       <div className="container max-w-4xl mx-auto text-center z-10 bg-transparent/80">
         <div className="space-y-6">
@@ -20,12 +20,12 @@ function Hero() {
           <p className="text-lg md:text-xl font-bold mt-3 opacity-0 animate-fade-in-delay-3">
             Frontend Developer transitioning into Full-Stack & AI/ML
           </p>
-          <p className="text-gray-500 mt-2 opacity-0 animate-fade-in-delay-3">
+          <p className="text-gray-500 text-sm md:text-lg mt-2 opacity-0 animate-fade-in-delay-3">
             I craft intuitive user interfaces, build robust backend systems, and
             integrate AI to deliver scalable, real-world solutions.
           </p>
         </div>
-        <div className="opacity-0 animate-fade-in-delay-4 pt-2">
+        <div className="opacity-0 animate-fade-in-delay-4 mt-4">
           <button className="cosmic-button">
             <a href="#projects">View Projects</a>
           </button>
