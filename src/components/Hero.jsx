@@ -3,7 +3,7 @@ import { ArrowDown } from "lucide-react";
 function Hero() {
   return (
     <section
-      id="hero"
+      id="home"
       className="relative min-h-screen flex flec-col items-center md:px-4"
     >
       <div className="container max-w-4xl mx-auto text-center z-10 bg-transparent/80">
