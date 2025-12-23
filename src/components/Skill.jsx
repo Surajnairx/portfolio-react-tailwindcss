@@ -8,7 +8,7 @@ const skills = [
   { name: "TailwindCSS", level: 90, category: "frontend" },
   { name: "Next.js", level: 5, category: "frontend" },
 
-  //backend
+  // backend
   { name: "Python", level: 85, category: "backend" },
   { name: "FastAPI", level: 80, category: "backend" },
   { name: "REST APIs", level: 85, category: "backend" },
@@ -26,6 +26,9 @@ const skills = [
 const categories = ["all", "frontend", "backend", "tools"];
 function Skill() {
   const [category, setCategory] = useState("all");
+  const activeSkill = skills.filter(
+    (skill) => category === "all" || skill.category === category
+  );
   return (
     <section id="skills" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -33,18 +36,20 @@ function Skill() {
           My <span className="text-primary">Skills</span>
         </h2>
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {/* {categories.map((item, key) => (
+          {categories.map((item, key) => (
             <button
               key={key}
               onClick={() => setCategory(item)}
-              className={`px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer ${ca}`}
+              className={`px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer ${
+                category === item ? "bg-primary text-primary-foreground" : ""
+              }`}
             >
               {item}
             </button>
-          ))} */}
+          ))}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map((skill, key) => (
+          {activeSkill.map((skill, key) => (
             <div
               key={key}
               className="bg-card p-6 rounded-lg shadow-xs card-hover"
