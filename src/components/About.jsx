@@ -68,7 +68,7 @@ function About() {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Microchip />
+                  <Microchip className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
                   <h4>Tech Enthusiast</h4>
