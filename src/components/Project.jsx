@@ -46,21 +46,22 @@ import { ArrowRight, ExternalLink, GithubIcon } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Stop the Timer",
-    description:
-      "An interactive countdown game where users must stop the timer before it expires.",
-    image: "/projects/Counter.png",
-    tags: ["React", "TailwindCSS"],
-    demo: "#",
-    github: "#",
-  },
-  {
-    id: 2,
+
     title: "CryptoRin",
     description:
       "A cryptocurrency tracker providing real-time prices, market data, and interactive charts.",
     image: "/projects/CryptoRin.png",
     tags: ["React", "TailwindCSS", "CoinGecko API"],
+    demo: "https://crypto-rin.vercel.app/",
+    github: "https://github.com/Surajnairx/CryptoRin",
+  },
+  {
+    id: 2,
+    title: "Stop the Timer",
+    description:
+      "An interactive countdown game where users must stop the timer before it expires.",
+    image: "/projects/Counter.png",
+    tags: ["React", "TailwindCSS"],
     demo: "#",
     github: "#",
   },
