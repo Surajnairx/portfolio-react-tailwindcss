@@ -1,4 +1,4 @@
-import { ExternalLink, GithubIcon } from "lucide-react";
+import { ArrowRight, ExternalLink, GithubIcon } from "lucide-react";
 
 // const projects = [
 //   {
@@ -64,16 +64,16 @@ const projects = [
     demo: "#",
     github: "#",
   },
-  {
-    id: 3,
-    title: "Manage Landing Page",
-    description:
-      "A pixel-perfect, responsive landing page built from a Frontend Mentor challenge.",
-    image: "/projects/LandingPage.png",
-    tags: ["React", "TailwindCSS"],
-    demo: "#",
-    github: "#",
-  },
+  // {
+  //   id: 3,
+  //   title: "Manage Landing Page",
+  //   description:
+  //     "A pixel-perfect, responsive landing page built from a Frontend Mentor challenge.",
+  //   image: "/projects/LandingPage.png",
+  //   tags: ["React", "TailwindCSS"],
+  //   demo: "#",
+  //   github: "#",
+  // },
   {
     id: 4,
     title: "Atlas Escapes",
@@ -140,6 +140,16 @@ function Project() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <a
+            target="_blank"
+            href="https://github.com/Surajnairx"
+            className="cosmic-button w-fit flex justify-center items-center mx-auto gap-2"
+          >
+            Checkout My Github
+            <ArrowRight size={16} />
+          </a>
         </div>
       </div>
     </section>
